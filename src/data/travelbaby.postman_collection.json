@@ -1,0 +1,1132 @@
+{
+	"info": {
+		"_postman_id": "be7d78c2-b85d-4e91-a9c1-8cd5762010f7",
+		"name": "travelbaby",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"item": [
+				{
+					"name": "Home",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/home/home",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"home"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/home/p-detail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"p-detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create or udpate profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fb",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "insta",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tiktok",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "hello world, nice stuffs",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2000/10/21",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Dps",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "dd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/profile-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"profile-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create story",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "hello",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/dps/Desktop/explore.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/story",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"story"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list my  all stories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/my-stories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"my-stories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list stories at home",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/stories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"stories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view a story",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/story/604441a30b40650eddbe872b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"story",
+								"604441a30b40650eddbe872b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete story",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/story/60443716d93ab00aea2d3c2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"story",
+								"60443716d93ab00aea2d3c2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "follow user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/follow/604434a52ab0af0574b560f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"follow",
+								"604434a52ab0af0574b560f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my followers, followings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/follows",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"follows"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user's followers, followings Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/follows/604434a52ab0af0574b560f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"follows",
+								"604434a52ab0af0574b560f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "home post list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/post/6056d0e3eeaa4c29bf192159",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"post",
+								"6056d0e3eeaa4c29bf192159"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "model request status detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/model/request",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"model",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request to be a model",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbWRpcGVzaDFAZ21haWwuY29tIiwiaWF0IjoxNjE0NjUyMTQzfQ.CaLCha4uig5sbl0-ToTRUPpAiOag5BS76GWG__vFYjo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Dipesh",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/Users/dps/Desktop/nc.jpg"
+								},
+								{
+									"key": "description",
+									"value": "description here",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "country here",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/home/model/request",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"home",
+								"model",
+								"request"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "randomdipesh@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "random",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "randomdipesh1@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/forgot",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"forgot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "randomdipesh1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "random",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Dipesh",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Mishra",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "random",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "randomdipesh1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "29280",
+									"type": "text"
+								},
+								{
+									"key": "pw",
+									"value": "random",
+									"type": "text"
+								},
+								{
+									"key": "rpw",
+									"value": "random",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/reset",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription",
+			"item": [
+				{
+					"name": "Subscription Detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/subscription/detail",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subscription",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscription logs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/subscription/logs",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subscription",
+								"logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscribe",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "plan",
+									"value": "Pro",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/subscription/subscribe",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subscription",
+								"subscribe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messaging",
+			"item": [
+				{
+					"name": "Start inbox",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "plan",
+									"value": "Pro",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/chat/start/603da023b5947d0832196889",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"start",
+								"603da023b5947d0832196889"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list inbox",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/chat/list/inbox",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"list",
+								"inbox"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list message of user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/chat/list/messages/nnHUZAzn8y",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"list",
+								"messages",
+								"nnHUZAzn8y"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "ok good",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/chat/message/nnHUZAzn8y",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"message",
+								"nnHUZAzn8y"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clear chat messages",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/chat/clear/nnHUZAzn8y",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"clear",
+								"nnHUZAzn8y"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "List model joining requests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/model/request/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"model",
+								"request",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approve model request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/model/request/approve/60b1df6b72e3cb1530fc4769",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"model",
+								"request",
+								"approve",
+								"60b1df6b72e3cb1530fc4769"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reject model request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apptoken",
+								"value": "App Token {{travelbabytoken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reason",
+									"value": "good reason",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/model/request/reject/60b1df6b72e3cb1530fc4769",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"model",
+								"request",
+								"reject",
+								"60b1df6b72e3cb1530fc4769"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

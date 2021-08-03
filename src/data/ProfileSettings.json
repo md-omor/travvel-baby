@@ -1,0 +1,99 @@
+
+
+{
+  "profileSidebar":[
+    {
+      "id": 1,
+      "text": "Feed",
+      "icon": "../../assets/home.png"
+    },
+    {
+      "id": 2,
+  
+      "text": "Explore",
+      "icon": "../../assets/telegram.png"
+    },
+    {
+      "id": 3,
+  
+      "text": "Travelers",
+      "icon": "../../assets/people.png"
+    },
+    {
+      "id": 4,
+  
+      "text": "Notifications",
+      "icon": "../../assets/bell.png"
+    },
+    {
+      "id": 5,
+  
+      "text": "Saved",
+      "icon": "../../assets/saved.png"
+    },
+    
+    {
+      "id": 7,
+  
+      "text": "Shop",
+      "icon": "../../assets/shop.png"
+    },
+    {
+      "id": 8,
+  
+      "text": "Earnings",
+      "icon": "../../assets/earnigs.png"
+    },
+    {
+      "id": 9,
+  
+      "text": "Settings",
+      "icon": "../../assets/settings.png"
+    },
+    {
+      "id": 10,
+  
+      "text": "Support",
+      "icon": "../../assets/support.png"
+    },
+    {
+      "id": 11,
+      "text": "sign Out",
+      "icon": "../../assets/signOut.png"
+    }
+  ], 
+
+  "viewFriends":[
+    {
+      "id": 1,
+      "female":"../../assets/Female/female1.png",
+      "name": "Sadhiya Dinesh",
+      "follows":"Follows you",
+      "icons":"../../assets/follow.png"
+    },
+    {
+      "id": 2,
+      "female":"../../assets/Female/female2.png",
+      "name": "Rita Mayor",
+      "follows":"Follows you",
+      "icons":"../../assets/follow.png"
+    },
+    {
+      "id": 3,
+      "female":"../../assets/Female/female3.png",
+      "name": "Kate Dennings",
+      "follows":"Follows you",
+      "icons":"../../assets/follow.png"
+    },
+    {
+      "id": 4,
+      "female":"../../assets/Female/frmale4.png",
+      "name": "Jason Derulo",
+      "follows":"Follows you",
+      "icons":"../../assets/follow.png"
+    }
+  ]
+
+
+
+  }
